@@ -8,6 +8,13 @@
   <link rel="icon" href="/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <style>
+    /* Lightbox (fullscreen) */
+    .lightbox-overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.85);z-index:60;padding:20px}
+    .lightbox-overlay.open{display:flex}
+    .lightbox-img{max-width:95vw;max-height:90vh;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+    .lightbox-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);color:#fff;border:none;padding:10px 14px;border-radius:999px;cursor:pointer}
+  </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900">
   <!-- Header -->
@@ -86,27 +93,25 @@
   <!-- Gallery Carousel -->
   <section class="py-16 bg-neutral-50" id="galeri">
     <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Galeri Hasil Pelanggan</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Galeri</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><figure><img src="/assets/hasil1.jpg" alt="Kaos sablon Dari Lokal Untuk Global" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos sablon tipografi komunitas</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil2.jpg" alt="Proses cetak mesin DTF" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Proses cetak mesin DTF</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil3.jpg" alt="Kaos sablon Ruang Reuni SMAN1KA" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos sablon acara reuni</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil4.jpg" alt="Kaos sablon HUT RI 80" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos peringatan HUT RI 80</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil5.jpg" alt="Kaos sablon Kimcoms Plastindo" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos perusahaan Kimcoms Plastindo</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil6.jpg" alt="Cetak DTF lembaran Kedai Accessories" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Cetak transfer sheet Kedai Accessories</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil7.jpg" alt="Bundelan kaos merah siap distribusi" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Bundelan kaos siap distribusi</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil8.jpg" alt="Kaos merah sablon Jedong Cangkring" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos komunitas Jedong Cangkring</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil9.jpg" alt="Kaos hitam sablon kepala harimau" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos sablon motif harimau</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil10.jpg" alt="Kaos merah sablon karakter anime Luffy bendera Indonesia" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos anime One Piece Luffy</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil11.jpg" alt="Kaos hitam sablon Kedai Accessories" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos logo Kedai Accessories</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil12.jpg" alt="Kaos merah sablon Bio Fish & Gallery" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos komunitas Bio Fish & Gallery</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil13.jpg" alt="Kaos merah sablon Kedai Accessories" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Kaos sablon Kedai Accessories</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="/assets/hasil14.jpg" alt="Proses lipat & packing kaos merah" class="w-full rounded-2xl shadow"/><figcaption class="mt-2 text-center text-sm text-neutral-600">Proses lipat & packing kaos</figcaption></figure></div>
+          <div class="swiper-slide"><img src="/assets/hasil1.jpg" alt="Galeri 1" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil2.jpg" alt="Galeri 2" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil3.jpg" alt="Galeri 3" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil4.jpg" alt="Galeri 4" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil5.jpg" alt="Galeri 5" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil6.jpg" alt="Galeri 6" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil7.jpg" alt="Galeri 7" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil8.jpg" alt="Galeri 8" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil9.jpg" alt="Galeri 9" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil10.jpg" alt="Galeri 10" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil11.jpg" alt="Galeri 11" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil12.jpg" alt="Galeri 12" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil13.jpg" alt="Galeri 13" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="/assets/hasil14.jpg" alt="Galeri 14" loading="lazy" class="w-full rounded-2xl shadow" /></div>
         </div>
-        <!-- Pagination -->
         <div class="swiper-pagination"></div>
-        <!-- Navigation -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
@@ -142,6 +147,35 @@
       breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
     });
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox-overlay" id="lightbox" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" aria-label="Tutup" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" alt="Preview gambar galeri" />
+  </div>
+
+  <script>
+    // Tambah Lightbox untuk gambar galeri
+    (function(){
+      const overlay = document.getElementById('lightbox');
+      const imgEl = document.getElementById('lightboxImg');
+      const btnClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('.swiper .swiper-slide img').forEach(img => {
+        img.addEventListener('click', () => {
+          imgEl.src = img.currentSrc || img.src;
+          overlay.classList.add('open');
+          overlay.setAttribute('aria-hidden','false');
+          btnClose.focus();
+        });
+      });
+
+      const close = () => { overlay.classList.remove('open'); overlay.setAttribute('aria-hidden','true'); imgEl.src=''; };
+      btnClose.addEventListener('click', close);
+      overlay.addEventListener('click', (e)=>{ if(e.target===overlay) close(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && overlay.classList.contains('open')) close(); });
+    })();
   </script>
 </body>
 </html>
