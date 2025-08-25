@@ -14,7 +14,9 @@
     .lightbox-overlay.open{display:flex}
     .lightbox-img{max-width:95vw;max-height:90vh;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
     .lightbox-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);color:#fff;border:none;padding:10px 14px;border-radius:999px;cursor:pointer}
-      html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth}
+    /* Offset agar anchor tidak ketutup header sticky */
+    section[id]{scroll-margin-top:88px;}
   </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900">
@@ -49,7 +51,7 @@
         </div>
       </div>
       <div class="aspect-video w-full rounded-3xl overflow-hidden shadow-inner">
-        <img src="/assets/promo-sablon-fullcolor.jpg" alt="Mr. Mozka – Sablon Full Color tanpa minimal order" class="w-full h-full object-cover" />
+        <img src="assets/promo-sablon-fullcolor.jpg" alt="Mr. Mozka – Sablon Full Color tanpa minimal order" class="w-full h-full object-cover" />
       </div>
     </div>
   </section>
@@ -126,42 +128,42 @@
       <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Pricelist</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="rounded-2xl overflow-hidden shadow">
-          <img src="/assets/pricelist-dtf-meteran.jpg" alt="Pricelist Cetak DTF Meteran – 1m 40rb, 2m 35rb, 5m 32rb, 10m 30rb. Area cetak 58x100cm" class="w-full" />
+          <img src="assets/pricelist-dtf-meteran.jpg" alt="Pricelist Cetak DTF Meteran – 1m 40rb, 2m 35rb, 5m 32rb, 10m 30rb. Area cetak 58x100cm" class="w-full" />
         </div>
         <div class="rounded-2xl overflow-hidden shadow">
-          <img src="/assets/pricelist-satuan.jpg" alt="Pricelist Satuan: Label 5×5cm Rp5.000, Logo 10×10cm Rp8.000, A5 Rp15.000, A4 Rp25.000, A3 Rp35.000" class="w-full" />
+          <img src="assets/pricelist-satuan.jpg" alt="Pricelist Satuan: Label 5×5cm Rp5.000, Logo 10×10cm Rp8.000, A5 Rp15.000, A4 Rp25.000, A3 Rp35.000" class="w-full" />
         </div>
         <div class="rounded-2xl overflow-hidden shadow md:col-span-2">
-          <img src="/assets/pricelist-grosir.jpg" alt="Pricelist Grosir: tabel harga kuantitas untuk Label, Logo, A5, A4, A3" class="w-full" />
+          <img src="assets/pricelist-grosir.jpg" alt="Pricelist Grosir: tabel harga kuantitas untuk Label, Logo, A5, A4, A3" class="w-full" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Gallery Carousel -->
-  <section class=\"py-16 bg-neutral-50\" id=\"galeri\">
-    <div class=\"container mx-auto px-4\">
-      <h2 class=\"text-2xl md:text-3xl font-extrabold mb-6\">Galeri</h2>
-      <div class=\"swiper\">
-        <div class=\"swiper-wrapper\">
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil1.jpg\" alt=\"Galeri 1\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil2.jpg\" alt=\"Galeri 2\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil3.jpg\" alt=\"Galeri 3\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil4.jpg\" alt=\"Galeri 4\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil5.jpg\" alt=\"Galeri 5\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil6.jpg\" alt=\"Galeri 6\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil7.jpg\" alt=\"Galeri 7\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil8.jpg\" alt=\"Galeri 8\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil9.jpg\" alt=\"Galeri 9\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil10.jpg\" alt=\"Galeri 10\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil11.jpg\" alt=\"Galeri 11\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil12.jpg\" alt=\"Galeri 12\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil13.jpg\" alt=\"Galeri 13\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
-          <div class=\"swiper-slide\"><img src=\"/assets/hasil14.jpg\" alt=\"Galeri 14\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+  <section class="py-16 bg-neutral-50" id="galeri">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Galeri</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/hasil1.jpg" alt="Galeri 1" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil2.jpg" alt="Galeri 2" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil3.jpg" alt="Galeri 3" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil4.jpg" alt="Galeri 4" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil5.jpg" alt="Galeri 5" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil6.jpg" alt="Galeri 6" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil7.jpg" alt="Galeri 7" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil8.jpg" alt="Galeri 8" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil9.jpg" alt="Galeri 9" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil10.jpg" alt="Galeri 10" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil11.jpg" alt="Galeri 11" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil12.jpg" alt="Galeri 12" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil13.jpg" alt="Galeri 13" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+          <div class="swiper-slide"><img src="assets/hasil14.jpg" alt="Galeri 14" loading="lazy" class="w-full rounded-2xl shadow" /></div>
         </div>
-        <div class=\"swiper-pagination\"></div>
-        <div class=\"swiper-button-prev\"></div>
-        <div class=\"swiper-button-next\"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </section>
@@ -197,14 +199,15 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
   <!-- Lightbox overlay -->
-  <div class=\"lightbox-overlay\" id=\"lightbox\" aria-hidden=\"true\" role=\"dialog\">
-    <button class=\"lightbox-close\" aria-label=\"Tutup\" id=\"lightboxClose\">✕</button>
-    <img class=\"lightbox-img\" id=\"lightboxImg\" alt=\"Preview gambar galeri\" />
+  <div class="lightbox-overlay" id="lightbox" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" aria-label="Tutup" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" alt="Preview gambar galeri" />
   </div>
 
   <script>
-    // Tambah Lightbox untuk gambar galeri
+    // Lightbox untuk gambar galeri
     (function(){
       const overlay = document.getElementById('lightbox');
       const imgEl = document.getElementById('lightboxImg');
