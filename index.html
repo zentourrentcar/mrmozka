@@ -14,6 +14,7 @@
     .lightbox-overlay.open{display:flex}
     .lightbox-img{max-width:95vw;max-height:90vh;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
     .lightbox-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);color:#fff;border:none;padding:10px 14px;border-radius:999px;cursor:pointer}
+      html{scroll-behavior:smooth}
   </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900">
@@ -25,6 +26,8 @@
         <span class="font-semibold tracking-wide">Mr. Mozka</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#edukasi">Apa itu DTF?</a>
+        <a href="#produk-dtf">Produk DTF</a>
         <a href="#layanan">Layanan</a>
         <a href="#harga">Harga</a>
         <a href="#galeri">Galeri</a>
@@ -39,7 +42,7 @@
     <div class="container mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 items-center gap-10">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Sablon Custom Satuan & Grosir DTF</h1>
-        <p class="mt-5 text-neutral-600 md:text-lg">Cetak kaos satuan maupun partai besar dengan kualitas tinggi. Proses cepat & harga terjangkau. Pesan via WhatsApp atau datang ke workshop kami.</p>
+        <p class="mt-5 text-neutral-600 md:text-lg">Cetak DTF Custom untuk Kaos, Totebag, Topi & Merchandise. Satuan maupun grosir, hasil tajam, awet, tanpa minimal order.</p>
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <a href="https://wa.me/6285168607470" target="_blank" class="rounded-2xl bg-neutral-900 text-white px-5 py-3 text-sm md:text-base shadow">Pesan via WhatsApp</a>
           <a href="https://instagram.com/mr.mozka" target="_blank" class="rounded-2xl border border-neutral-300 px-5 py-3 text-sm md:text-base">Lihat Instagram</a>
@@ -48,6 +51,51 @@
       <div class="aspect-video w-full rounded-3xl overflow-hidden shadow-inner">
         <img src="/assets/promo-sablon-fullcolor.jpg" alt="Mr. Mozka – Sablon Full Color tanpa minimal order" class="w-full h-full object-cover" />
       </div>
+    </div>
+  </section>
+
+  <!-- Edukasi DTF -->
+  <section class="py-16 bg-white" id="edukasi">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Apa itu Sablon DTF?</h2>
+      <p class="text-neutral-600 md:text-lg mb-6"><strong>Direct to Film (DTF)</strong> adalah teknologi sablon modern dengan hasil tajam, full color, dan tahan lama. Tidak hanya untuk kaos, DTF juga bisa diaplikasikan ke berbagai produk merchandise dan souvenir.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+          <h3 class="font-semibold mb-2">Aplikasi Produk</h3>
+          <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1">
+            <li>Kaos (cotton, poly, jersey)</li>
+            <li>Totebag & tas kain</li>
+            <li>Topi, hoodie, jaket</li>
+            <li>Merchandise & souvenir komunitas / perusahaan</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+          <h3 class="font-semibold mb-2">Keunggulan DTF</h3>
+          <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1">
+            <li>Full color + detail tinggi</li>
+            <li>Bisa cetak satuan maupun grosir</li>
+            <li>Hasil kuat & awet dicuci</li>
+            <li>Bisa diaplikasikan ke banyak jenis bahan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contoh Produk DTF -->
+  <section class="py-16 bg-neutral-50" id="produk-dtf">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Contoh Produk yang Bisa Pakai Sablon DTF</h2>
+      <ul class="list-disc list-inside text-neutral-700 space-y-2 md:text-lg">
+        <li>Kaos (cotton, polyester, jersey olahraga)</li>
+        <li>Totebag & tas kain</li>
+        <li>Topi</li>
+        <li>Hoodie & jaket</li>
+        <li>Merchandise komunitas (lanyard, pouch, masker kain)</li>
+        <li>Souvenir perusahaan (goodie bag, seragam event)</li>
+        <li>Payung kain (seperti payung lipat promosi atau payung golf)</li>
+        <li>Apron & seragam kerja</li>
+      </ul>
     </div>
   </section>
 
@@ -91,29 +139,29 @@
   </section>
 
   <!-- Gallery Carousel -->
-  <section class="py-16 bg-neutral-50" id="galeri">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Galeri</h2>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="/assets/hasil1.jpg" alt="Galeri 1" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil2.jpg" alt="Galeri 2" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil3.jpg" alt="Galeri 3" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil4.jpg" alt="Galeri 4" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil5.jpg" alt="Galeri 5" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil6.jpg" alt="Galeri 6" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil7.jpg" alt="Galeri 7" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil8.jpg" alt="Galeri 8" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil9.jpg" alt="Galeri 9" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil10.jpg" alt="Galeri 10" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil11.jpg" alt="Galeri 11" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil12.jpg" alt="Galeri 12" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil13.jpg" alt="Galeri 13" loading="lazy" class="w-full rounded-2xl shadow" /></div>
-          <div class="swiper-slide"><img src="/assets/hasil14.jpg" alt="Galeri 14" loading="lazy" class="w-full rounded-2xl shadow" /></div>
+  <section class=\"py-16 bg-neutral-50\" id=\"galeri\">
+    <div class=\"container mx-auto px-4\">
+      <h2 class=\"text-2xl md:text-3xl font-extrabold mb-6\">Galeri</h2>
+      <div class=\"swiper\">
+        <div class=\"swiper-wrapper\">
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil1.jpg\" alt=\"Galeri 1\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil2.jpg\" alt=\"Galeri 2\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil3.jpg\" alt=\"Galeri 3\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil4.jpg\" alt=\"Galeri 4\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil5.jpg\" alt=\"Galeri 5\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil6.jpg\" alt=\"Galeri 6\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil7.jpg\" alt=\"Galeri 7\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil8.jpg\" alt=\"Galeri 8\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil9.jpg\" alt=\"Galeri 9\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil10.jpg\" alt=\"Galeri 10\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil11.jpg\" alt=\"Galeri 11\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil12.jpg\" alt=\"Galeri 12\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil13.jpg\" alt=\"Galeri 13\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
+          <div class=\"swiper-slide\"><img src=\"/assets/hasil14.jpg\" alt=\"Galeri 14\" loading=\"lazy\" class=\"w-full rounded-2xl shadow\" /></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class=\"swiper-pagination\"></div>
+        <div class=\"swiper-button-prev\"></div>
+        <div class=\"swiper-button-next\"></div>
       </div>
     </div>
   </section>
@@ -146,13 +194,13 @@
       autoplay: { delay: 3000 },
       breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
     });
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
   <!-- Lightbox overlay -->
-  <div class="lightbox-overlay" id="lightbox" aria-hidden="true" role="dialog">
-    <button class="lightbox-close" aria-label="Tutup" id="lightboxClose">✕</button>
-    <img class="lightbox-img" id="lightboxImg" alt="Preview gambar galeri" />
+  <div class=\"lightbox-overlay\" id=\"lightbox\" aria-hidden=\"true\" role=\"dialog\">
+    <button class=\"lightbox-close\" aria-label=\"Tutup\" id=\"lightboxClose\">✕</button>
+    <img class=\"lightbox-img\" id=\"lightboxImg\" alt=\"Preview gambar galeri\" />
   </div>
 
   <script>
